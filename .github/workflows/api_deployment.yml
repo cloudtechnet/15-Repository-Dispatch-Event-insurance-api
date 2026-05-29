@@ -20,7 +20,7 @@ jobs:
         curl -X POST \
         -H "Accept: application/vnd.github+json" \
         -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
-        https://api.github.com/repos/company/insurance-web/dispatches \
+         https://api.github.com/repos/<owner>/15-Repository-Dispatch-Event-Insurance-Web/dispatches \
         -d '{
           "event_type":"deploy-frontend",
           "client_payload":{
